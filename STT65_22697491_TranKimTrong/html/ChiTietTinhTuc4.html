@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFood - Nông trại chó cưng hút khách ở Đà Lạt</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/Layout.css">
+    <link rel="stylesheet" href="../css/TinTuc.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+<!-- Brand -->
+            <a class="navbar-brand" href="TrangChu.html">PetFood</a>
+<!-- Nút mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu" aria-controls="Menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!-- Menu -->
+            <div class="collapse navbar-collapse" id="Menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="TrangChu.html"><div class="text_Menu">Trang Chủ</div><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm
+                        </button>
+                        <div class="dropdown-menu custom-sanPham">
+                            <ul class="CT_SanPham">
+                                <li id="DogFood">
+                                    <a href="DanhSachSP_Cun.html" class="DOG_DS">
+                                        <img src="../img/Dog.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Cún</h2>
+                                    </a><br>
+                                    <ul class="CT_DOGFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Xương gặm & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                    </ul>                              
+                                </li>
+
+                                <li id="CatFood">
+                                    <a href="DanhSachSP_Meo.html" class="CAT_DS">
+                                        <img src="../img/Cat.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Mèo</h2>
+                                    </a><br>
+                                    <ul class="CT_CATFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Snack & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                        <li><a href="#">Cỏ mèo & Catnip</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li id="Note"> <br>
+                                    <div class="Note_content">
+                                        <div class="text_Note">
+                                            Thức ăn hàng đầu
+                                            <h5>Monster Cat Grain Free Tiệt Trùng</h5> 
+                                        </div>
+                                        <div class="img_Note">
+                                            <img src="../img/thucAnTop.png" alt="">
+                                            <a href="#"><div class="box" style="width: 385px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tin Tức
+                        </button>
+                        <div class="dropdown-menu custom-TinTuc" >
+                            <ul id="TinTuc">
+                                <li id="gioiThieu_TT">
+                                    <h2>Tin tức thú cưng</h2>
+                                    <p style="width: 90%; float: left;">Cập nhật những thông tin mới nhất về thú cưng, bao gồm xu hướng chăm sóc, chế độ dinh dưỡng, sức khỏe, và mẹo huấn luyện. Bạn sẽ luôn nắm bắt được cách chăm sóc thú cưng tốt nhất và tạo môi trường sống hạnh phúc cho các bạn nhỏ đáng yêu của mình.</p>
+                                </li>
+
+                                <li id="chiTiet_TT">
+                                    <h2>Tin tức</h2>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="hotTT">
+                                            <img src="../img/Lua.png" alt="" style="background-color: rgb(245, 140, 102);">
+                                            <span>Tin tức nóng</span>
+                                        </div> 
+                                    </a>
+
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="newTT">
+                                            <img src="../img/DongHo.png" alt="" style="background-color: #d6d97e;">
+                                            <span>Tin tức mới nhất</span>
+                                        </div> 
+                                    </a>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="wordTT">
+                                            <img src="../img/TraiDat.png" alt="" style="background-color: #acddbb;">
+                                            <span>Cập nhật trên toàn thế giới</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li id="Top_TT">
+                                    <h2>Tin thức hàng đầu</h2>
+                                    <img src="../img/tinTucTop.png" alt="">
+                                    <span style="font-size: 18px; font-weight: bolder;">Triệu phú Ấn Độ cho chó cưng thừa kế tài sản</span>
+                                    <a href="TinTuc.html"><div class="box" style="width: 365px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a href="GioiThieu.html" class="nav-link"><div class="text_Menu">Giới Thiệu</div></a></li>
+                    <li class="nav-item active"><a href="ThuongHieu.html" class="nav-link"><div class="text_Menu">Thương Hiệu</div></a></li>
+                    <li class="nav-item active"><a href="GioHang.html" class="nav-link"><div class="text_Menu">Giỏ Hàng</div></a></li>
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tài Khoảng
+                        </button>
+                        <div class="dropdown-menu custom-taikhoang" >
+                            <a class="dropdown-item" href="DangNhap.html">Đăng nhập</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="DangKy.html">Đăng ký</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container cus_chiTietTT tinTuc4">
+        <div class="CT_header">
+            <nav id="ngayPhatHanh">Thứ bảy, 31/8/2024, 08:00 (GMT+7)</nav>
+            <h1>Nông trại chó cưng hút khách ở Đà Lạt</h1>
+        </div>
+        <div class="CT_content">
+            <p>Nông trại ở xã Tà Nung nuôi dưỡng và chăm sóc nhiều giống chó, trở thành địa chỉ cho khách yêu thú cưng khi đến Đà Lạt.</p>
+            <img src="../img/tinTuc4-1.png" width="100%" alt="">
+            <p>Nông trại Thôn 13 nằm ở Tà Nung, cách TP Đà Lạt khoảng 15 km, mở cửa từ năm 2019. Đây là tổ hợp gồm quán cà phê, trại nuôi chó và vườn cây nông nghiệp. Không gian vùng ngoại ô với con đường uốn lượn, rừng thông bao phủ và những thảm cỏ xanh thu hút du khách tìm đến. Điểm nhấn được yêu thích ở đây là dịch vụ check in cùng thú cưng.</p>
+            <img src="../img/tinTuc4-2.png" width="100%" alt="">
+            <p>
+                Nông trại có diện tích hơn một ha, trong đó hơn một nửa được dành làm khu nuôi, thả, chăm sóc và bố trí các dịch vụ vui chơi với hơn 30 con chó cưng, gồm nhiều chủng loại như Corgi, Alaska, husky, poodle, samoyed.
+                <br><br>
+                Chủ nông trại Lâm Hữu Phước, 27 tuổi, cho biết chú trọng việc lên thực đơn hàng ngày để đảm bảo sức khỏe và tăng đề kháng của đàn chó. Thức ăn được phân theo độ tuổi và giống, kết hợp giữa thức ăn đóng hộp và tự chế biến, bổ sung đủ vitamin và dưỡng chất.
+                <br><br>
+                "Chế độ ăn và vaccine cho chó được tham khảo ý kiến của bác sĩ thú y", Phước nói.
+            </p>
+            <img src="../img/tinTuc4-3.png" width="100%" alt="">
+            <p>
+                Khi còn ở TP HCM, Phước từng nuôi chó nhưng phải chuyển nhà liên tục vì làm phiền hàng xóm. Năm 2018, anh chuyển lên Đà Lạt, chọn thửa đất rộng và yên tĩnh để có không gian trồng rau, nuôi chó. Phước tạo dựng lại cảnh quan, mua thêm nhiều chó, mở cửa đón du khách đến tham quan.
+                <br><br>
+                "Mong muốn đây là điểm gặp gỡ và chia sẻ kinh nghiệm nuôi và chăm sóc của những người yêu chó", Phước nói.
+                <br><br>
+                Phước đảm nhiệm huấn luyện chính và có hai nhân viên hỗ trợ. Chó được qua huấn luyện có thể kiểm soát hành vi và thân thiện hơn với khách. Theo Phước, huấn luyện thú cưng làm dịch vụ thân thiện với khách "cần nhiều thời gian, kiên nhẫn và cả tình yêu thương thay vì đánh đập".
+            </p>
+            <img src="../img/tinTuc4-4.png" width="100%" alt="">
+            <p>
+                Nhân viên nông trại dùng máy sấy lông cho chó sau khi cắt tỉa.
+                <br><br>
+                Công việc vệ sinh chỗ ở, chỗ chơi cho chó cưng được thực hiện hằng ngày. Tuy nhiên, Phước cho biết chó không đòi hỏi tắm thường xuyên, tần suất phụ thuộc vào các yếu tố như môi trường sống, loại lông. Những giống chó có bộ lông, da khỏe mạnh, tắm thường xuyên "sẽ làm giảm độ bóng mượt của lông, gây khô da, thậm chí tổn thương da".
+            </p>
+            <img src="../img/tinTuc4-5.png" width="100%" alt="">
+            <p>
+                Qua vài năm, nông trại chó Thôn 13 được nhiều khách biết đến và tìm tới. "Nơi này có không gian rộng, chó thoái mái chạy nhảy nô đùa với khách", du khách Như Quỳnh, 23 tuổi, nói.
+                <br><br>
+                Như Ngọc, sống ở Đà Lạt, cũng cho rằng đây là địa điểm "dành cho người yêu chó" và mong muốn du khách đến Đà Lạt tìm những dịch vụ văn minh với thú cưng.
+                <br><br>
+                Ngoài làm quen, chơi đùa cùng chó cưng, du khách đến nông trại cũng thích chụp ảnh với những vườn hoa, con đường uốn lượn trên sườn dốc.
+            </p>
+            <img src="../img/tinTuc4-6.png" width="100%" alt="">
+            <p>
+                Thôn 13 còn nuôi dê và cừu để khách tới trải nghiệm và chụp hình. Mỗi ngày nông trại đón hơn 50 lượt khách đến tham quan, lượng khách tăng gấp đôi vào cuối tuần.
+                <br><br>
+                Du khách đến đây vào khoảng tháng 10 -11 sẽ có cơ hội chiêm ngưỡng những hàng hoa dã quỳ vàng, ngồi dưới tán cây thưởng thức đồ uống, ngắm nhìn khung cảnh bình yên.
+                <br><br>
+                Thời gian mở cửa từ 6h30 đến 18h. Giá vé vào cổng là 100.000 đồng mỗi khách kèm theo một món nước tùy chọn. Trẻ em dưới 1m2 được miễn phí vé.
+            </p>
+        </div>      
+        <div class="CT_footer">
+            <span>Tuấn Anh</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Tin Tức Liên Quan</h1>
+        <div class="card-horizontal">
+            <div class="card-image">
+                <a href="ChiTietTinhTuc1.html"><img src="../img/tinTucTop.png" alt="Card Image"></a>
+            </div>
+            <div class="card-content">
+                <h3>Triệu phú Ấn Độ cho chó cưng thừa kế tài sản</h3>
+                <p>Trước khi qua đời ở tuổi 86, doanh nhân Ratan Tata để lại phần lớn tài sản trị giá 118 triệu USD cho chú chó cưng tên Tito thuộc giống chăn cừu Đức.</p>
+                <a href="ChiTietTinhTuc1.html"><div class="box" style="width: 250px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+            </div>
+        </div>          
+        <hr>
+
+        <div class="card-horizontal">
+            <div class="card-image">
+                <a href="ChiTietTinhTuc2.html"><img src="../img/tinTuc2.png" alt="Card Image"></a>
+            </div>
+            <div class="card-content">
+                <h3>Thi trình diễn thời trang mèo ở TP HCM</h3>
+                <p>Mèo diện áo dài, tứ thân, đầm dạ hội cùng trình diễn trên sân khấu trong Ngày hội thú cưng tổ chức ở TP Thủ Đức, ngày 20/10.</p>
+                <a href="ChiTietTinhTuc2.html"><div class="box" style="width: 250px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+            </div>
+        </div>          
+        <hr>
+
+        <div class="card-horizontal">
+            <div class="card-image">
+                <a href="ChiTietTinhTuc3.html">
+                    <video autoplay loop muted playsinline>
+                        <source src="../video/tinTuc3.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </div>
+            <div class="card-content">
+                <h3>Mèo bất lực vì bị vịt con 'hôn' tới tấp</h3>
+                <p>Mèo tung hàng chục cú vả cũng không "xi-nhê" gì với vịt con, thậm chí còn thua thảm hại trước độ nhây của vịt.</p>
+                <a href="ChiTietTinhTuc3.html"><div class="box" style="width: 250px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+            </div>
+        </div>          
+        <hr>
+
+        <div class="card-horizontal">
+            <div class="card-image">
+                <a href="ChiTietTinhTuc5.html"><img src="../img/tinTuc5.png" alt="Card Image"></a>
+            </div>
+            <div class="card-content">
+                <h3>Chó kẹt đầu vào bánh ôtô khi đuổi bắt chuột</h3>
+                <p>Ông Samrit Pongpitak, 75 tuổi, chủ nhân của con chó phải gọi thợ máy đến giải cứu nó.</p>
+                <a href="ChiTietTinhTuc5.html"><div class="box" style="width: 250px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+            </div>
+        </div>          
+        <hr>
+    </div>
+
+    
+<!-- Footer -->
+    <footer>
+        <div class="brand_footer">
+            <a href="home.html">PetFood</a>
+            <br>
+            <a href="#"><img src="../img/logo_inst.svg" alt="instagram"></a>
+            <a href="#"><img src="../img/logo_face.svg" alt="facebook"></a>
+        </div>
+        <div class="produoct_footer">
+            <div class="text_footer">Sản Phẩm</div>
+            <a class="a_footer" href="DanhSachSP_Cun.html">Chó</a>
+            <br>    
+            <a class="a_footer" href="DanhSachSP_Meo.html">Mèo</a>
+        </div>
+        <div class="gioiThieu_footer">
+            <div class="text_footer">Giới thiệu</div>
+            <a class="a_footer" href="#">Về chúng tôi</a>
+            <br>
+            <a class="a_footer" href="#">Chính sách ưu đãi</a>
+            <br>
+            <a class="a_footer" href="#">Blog</a>
+        </div>
+        <div class="lienHe_footer">
+            <div class="text_footer">Liên hệ</div>
+            <a class="a_footer" href="#">0382940892</a>
+            <br>
+            <a class="a_footer" href="#">petfood@gmail.com</a>
+            <br>
+            <a class="a_footer" href="#">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

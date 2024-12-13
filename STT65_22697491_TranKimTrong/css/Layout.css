@@ -1,0 +1,416 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+    color: #1d3a2a;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: CircularStd, sans-serif;
+}
+
+/* Font Chữ  */
+@font-face {
+    font-family: 'Brand';
+    src: url('../ttf/Sriracha-Regular.ttf') format('truetype'); /* Đường dẫn tới file font */
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 200px;
+}
+
+header > .navbar {
+    width: 100%;
+    height: 70px;
+    position:  fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #cbded177;
+}
+
+/* Brand */
+header > .navbar > .navbar-brand {
+    font-family: 'Brand', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1d3a2a;
+}
+
+/* Menu */
+
+.text_Menu {
+    color: #264634;
+}
+
+.text_Menu:hover {
+    color: #519667;
+}
+
+header .collapse > .navbar-nav li {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+}
+
+header .collapse > .navbar-nav > li > a {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+
+/* Dropdown Sản phẩm*/
+header .custom-sanPham {
+    background-color: #F4F4F4;
+    width: 1350px;
+    height: 600px;
+    margin-left: -430px;
+    margin-top: 9px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+header .dropdown-toggle {
+    color: #1d3a2a;
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    width: 130px;
+    height: 42px;
+}
+
+header .dropdown-toggle:hover {
+    color: #519667;
+}
+
+header .dropdown-toggle:focus body {
+    background-color: #FFFFFF;
+}
+
+header .CT_SanPham {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* DOG */
+
+.CT_SanPham #DogFood {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 30px 90px;
+}
+
+.DOG_DS img {
+    width: 22%;
+    float: left;
+}
+
+.DOG_DS h2 {
+    width: 50%;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    padding: 0px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.DOG_DS h2:hover {
+    background-color: #cbded1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #cbded1;
+}
+
+#DogFood .CT_DOGFOOD {
+    list-style-type: none;
+    width: 100%;
+    margin: 80px 0px;
+}
+
+#DogFood .CT_DOGFOOD li {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 15px 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+#DogFood .CT_DOGFOOD li:hover {
+    background-color: #cbded1;
+}
+
+/* CAT */
+.CT_SanPham #CatFood {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 30px 90px;
+}
+
+.CAT_DS img {
+    width: 22%;
+    float: left;
+}
+
+.CAT_DS h2 {
+    width: 50%;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    padding: 0px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.CAT_DS h2:hover {
+    background-color: #cbded1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #cbded1;
+}
+
+#CatFood .CT_CATFOOD {
+    list-style-type: none;
+    width: 100%;
+    margin: 80px 0px;
+}
+
+#CatFood .CT_CATFOOD li {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 15px 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+#CatFood .CT_CATFOOD li:hover {
+    background-color: #cbded1;
+}
+
+/* NOTE */
+
+.CT_SanPham #Note {
+    width: 40%;
+    height: 100%;
+    line-height: 50px;
+    text-align: left;
+    float: left;
+}
+
+.CT_SanPham a {
+    color: #253429;
+}
+
+.CT_SanPham a:hover {
+    text-decoration: none;
+}
+
+.Note_content {
+    text-align: left;
+}
+
+.Note_content > .text_Note {
+    margin-top: -25px;
+    width: 420px;
+    text-align: left;
+}
+
+.Note_content > .text_Note h5 {
+    font-weight: bold;
+}
+
+.Note_content > .img_Note {
+    width: 420px;
+}
+
+.Note_content img {
+    border-radius: 20px;
+    width: 90%;
+}
+
+.box {
+    margin-top: 20px;
+    background-color: #1d3a2a;
+    height: 70px;
+    border-radius: 20px;
+    float: left;    
+    display: flex;
+    gap: 80px;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    border: 2px solid #e6e4d7;
+}
+
+.box:hover {
+    gap: 120px;
+}
+
+/* TinTuc */
+header .custom-TinTuc {
+    background-color: #F4F4F4;
+    width: 1350px;
+    height: 470px;
+    margin-left: -555px;
+    margin-top: 9px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+#TinTuc li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    height: 600px;
+    text-align: left;
+    padding: 20px;
+}
+
+#TinTuc h2 {
+    padding-bottom: 20px;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+#TinTuc a {
+    text-decoration: none;
+}
+
+#gioiThieu_TT {
+    text-align: justify;
+}
+
+.cus_CT {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: 0.1s ease-in-out;
+}
+
+#hotTT:hover {
+    background-color: rgb(245, 140, 102);
+}
+
+#newTT:hover {
+    background-color: #d6d97e;
+}
+
+#wordTT:hover {
+    background-color: #acddbb;
+}
+
+
+.cus_CT img {
+    width: 14%;
+    border-radius: 50px;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.cus_CT span {
+    font-weight: bolder;
+}
+
+
+#Top_TT img {
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Tài Khoảng */
+header .custom-taikhoang {
+    background-color: #F4F4F4;
+    margin-top: 10px;
+    border: 1px solid #cbded185;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+header .custom-taikhoang .dropdown-item {
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+header .custom-taikhoang .dropdown-item:hover {
+    background-color: #cbded1;
+}
+
+
+
+/* Footer */
+footer {    
+    width: 100%;
+    height: 390px;
+    text-align: left;
+    display: flex;
+    border-top: 1px solid #e6e4d7;
+    padding-top: 20px;
+}
+
+footer .brand_footer {
+    width: 25%;
+    height: 100%;
+    float: left;
+    font-family: 'Brand', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .brand_footer a {
+    color: #1d3a2a;
+    text-decoration: none;
+}
+
+footer .produoct_footer {
+    width: 17%;
+    height: 100%;
+    float: left;
+    color: #1d3a2a;
+    padding: 35px;
+}
+
+footer .gioiThieu_footer {
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 35px;
+}
+
+footer .lienHe_footer {
+    width: 33%;
+    height: 100%;
+    float: left;
+    padding: 35px;
+}
+
+footer .a_footer {
+    color: #1d3a2a;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+footer .text_footer {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}

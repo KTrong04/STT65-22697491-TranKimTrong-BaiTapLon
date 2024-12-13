@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thức ăn lành mạnh cho chó & mèo | PetFood</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/Layout.css">
+    <link rel="stylesheet" href="../css/TrangChu.css">
+    <script src="../js/TrangChu.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+<!-- Brand -->
+            <a class="navbar-brand" href="TrangChu.html">PetFood</a>
+<!-- Nút mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu" aria-controls="Menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!-- Menu -->
+            <div class="collapse navbar-collapse" id="Menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="TrangChu.html"><div class="text_Menu">Trang Chủ</div><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm
+                        </button>
+                        <div class="dropdown-menu custom-sanPham">
+                            <ul class="CT_SanPham">
+                                <li id="DogFood">
+                                    <a href="DanhSachSP_Cun.html" class="DOG_DS">
+                                        <img src="../img/Dog.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Cún</h2>
+                                    </a><br>
+                                    <ul class="CT_DOGFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Xương gặm & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                    </ul>                              
+                                </li>
+
+                                <li id="CatFood">
+                                    <a href="DanhSachSP_Meo.html" class="CAT_DS">
+                                        <img src="../img/Cat.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Mèo</h2>
+                                    </a><br>
+                                    <ul class="CT_CATFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Snack & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                        <li><a href="#">Cỏ mèo & Catnip</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li id="Note"> <br>
+                                    <div class="Note_content">
+                                        <div class="text_Note">
+                                            Thức ăn hàng đầu
+                                            <h5>Monster Cat Grain Free Tiệt Trùng</h5> 
+                                        </div>
+                                        <div class="img_Note">
+                                            <img src="../img/thucAnTop.png" alt="">
+                                            <a href="#"><div class="box" style="width: 385px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tin Tức
+                        </button>
+                        <div class="dropdown-menu custom-TinTuc" >
+                            <ul id="TinTuc">
+                                <li id="gioiThieu_TT">
+                                    <h2>Tin tức thú cưng</h2>
+                                    <p style="width: 90%; float: left;">Cập nhật những thông tin mới nhất về thú cưng, bao gồm xu hướng chăm sóc, chế độ dinh dưỡng, sức khỏe, và mẹo huấn luyện. Bạn sẽ luôn nắm bắt được cách chăm sóc thú cưng tốt nhất và tạo môi trường sống hạnh phúc cho các bạn nhỏ đáng yêu của mình.</p>
+                                </li>
+
+                                <li id="chiTiet_TT">
+                                    <h2>Tin tức</h2>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="hotTT">
+                                            <img src="../img/Lua.png" alt="" style="background-color: rgb(245, 140, 102);">
+                                            <span>Tin tức nóng</span>
+                                        </div> 
+                                    </a>
+
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="newTT">
+                                            <img src="../img/DongHo.png" alt="" style="background-color: #d6d97e;">
+                                            <span>Tin tức mới nhất</span>
+                                        </div> 
+                                    </a>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="wordTT">
+                                            <img src="../img/TraiDat.png" alt="" style="background-color: #acddbb;">
+                                            <span>Cập nhật trên toàn thế giới</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li id="Top_TT">
+                                    <h2>Tin thức hàng đầu</h2>
+                                    <img src="../img/tinTucTop.png" alt="">
+                                    <span style="font-size: 18px; font-weight: bolder;">Triệu phú Ấn Độ cho chó cưng thừa kế tài sản</span>
+                                    <a href="TinTuc.html"><div class="box" style="width: 365px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a href="GioiThieu.html" class="nav-link"><div class="text_Menu">Giới Thiệu</div></a></li>
+                    <li class="nav-item active"><a href="ThuongHieu.html" class="nav-link"><div class="text_Menu">Thương Hiệu</div></a></li>
+                    <li class="nav-item active"><a href="GioHang.html" class="nav-link"><div class="text_Menu">Giỏ Hàng</div></a></li>
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tài Khoảng
+                        </button>
+                        <div class="dropdown-menu custom-taikhoang" >
+                            <a class="dropdown-item" href="DangNhap.html">Đăng nhập</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="DangKy.html">Đăng ký</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- Search -->    
+    <article>
+        <form>
+            <button type="submit"><img src="../icon/search.png" alt="" width="30px"></button>
+            <input type="search" placeholder="Tìm kiếm sản phẩm...">
+        </form>
+    </article>
+<!-- Slide -->
+    <div id="SlideGT">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" style="z-index: -1;">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="slide1">
+                    <div class="content_slide1">
+                        <div class="text_slide1">
+                            <h1>Chọn PetFood <br> Chọn sự chăm sóc toàn diện cho thú cưng!</h1>
+                            <p>Tất cả sản phẩm của chúng tôi đều được lựa chọn kỹ lưỡng, giúp bạn <br> an tâm khi chăm sóc những người bạn nhỏ trong gia đình.</p>
+                        </div>
+                        <a href="#"><div class="CT_slide" style="background-color: #1d3a2a;"><div style="font-weight: bold; color: #FFFFFF; letter-spacing: 1px;">Tìm hiểu thêm</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                    </div>
+                </div>
+                <div class="carousel-item" id="slide2">
+                    <div class="content_slide2">
+                        <h1>MÈO THẬT TUYỆT VỜI</h1>
+                        <p>
+                            Mèo thực sự tuyệt vời, vì vậy chúng tôi sẽ chia sẻ các 
+                            <br> công cụ và mẹo để giúp chúng phát triển bên cạnh bạn.
+                        </p>    
+                        <a href="#"><div class="CT_slide" style="background-color: rgb(123, 22, 12);"><div style="font-weight: bold; color: #FFFFFF; letter-spacing: 1px;">Khám phá thêm</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                    </div>
+                </div>
+                <div class="carousel-item" id="slide3">
+                    <div class="content_slide3">
+                        <img src="../img/productSlide3.webp" alt="" class="img_slide3">
+                        <div class="text_slide3">
+                            <h1>Món Ăn Mặn Cho <br> Dinh Dưỡng Đẳng Cấp</h1>
+                            <a href="#"><div class="CT_slide" style="background-color: rgb(98, 162, 187);"><div style="font-weight: bold; color: #FFFFFF; letter-spacing: 1px;">Xem chi tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Sản phẩm phổ biến của chó -->
+    <div class="productTop">
+        <div class="container">
+            <h3 style="font-weight: bold; color: #1d3a2a; padding: 10px 0px;">Sản phẩm chó phổ biến</h3>
+            <div class="card-deck">
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/productDog3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Vịt Protein Đơn</h5>
+
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/productTopDOG2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Orginal Sensitive Small Bites</h5>
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/productTopDOG3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thịt bò sống Monster Rawhide</h5>
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Video mèo -->
+    <section>
+        <div class="img_se">
+            <img src="../img/duiGa.svg" alt="" width="100px">
+            <img src="../img/ChungChi.svg" alt="" width="100px">
+            <img src="../img/tieuHoa.svg" alt="" width="100px">
+        </div>
+        <video autoplay loop muted playsinline>
+            <source src="../video/Cat.mp4" type="video/mp4">
+        </video>
+        <div class="text_video_cat">
+            <h1>Cho xương chắc khỏe</h1>
+            <p>Sự lựa chọn cân bằng các loại vitamin và khoáng chất giúp <br> bôi trơn các khớp và giúp thú cưng xây dựng xương và răng chắc khỏe.</p>
+        </div>
+    </section>
+<!-- Sản phẩm phổ biến của mèo -->
+    <div class="productTop">
+        <div class="container">
+            <h3 style="font-weight: bold; color: #1d3a2a; padding: 10px 0px;">Sản phẩm mèo phổ biến</h3>
+            <div class="card-deck">
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/MonsterCatBabyMousse.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Mousse cho bé mèo quái vật</h5>
+
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/MonsterCatMinisChiken.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Thức ăn cho mèo Minis Grain Free Chicken</h5>
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="#">
+                        <div class="New">New!</div>
+                        <img src="../img/MonsterCatMinisSalmon.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Cat Minis Cá hồi</h5>
+                            <div class="ReadMore">
+                                <div class="text_R">Chi tiết</div>
+                                <div class="muiTen"><img src="../img/muiten.svg" alt=""></div>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="parallaximage">
+        <div class="forest">
+            <img src="../img/f_1.svg" loading="lazy" alt="" class="parallaximage4">
+            <img src="../img/f_2.svg" loading="lazy" alt="" class="parallaximage3">
+            <img src="../img/f_3.svg" loading="lazy" alt="" class="parallaximage2">
+            <img src="../img/f_4.svg" loading="lazy" alt="" class="parallaximage1">
+        </div>   
+    </div>
+
+<!-- Footer -->
+    <footer>
+        <div class="brand_footer">
+            <a href="home.html">PetFood</a>
+            <br>
+            <a href="#"><img src="../img/logo_inst.svg" alt="instagram"></a>
+            <a href="#"><img src="../img/logo_face.svg" alt="facebook"></a>
+        </div>
+        <div class="produoct_footer">
+            <div class="text_footer">Sản Phẩm</div>
+            <a class="a_footer" href="DanhSachSP_Cun.html">Chó</a>
+            <br>
+            <a class="a_footer" href="DanhSachSP_Meo.html">Mèo</a>
+        </div>
+        <div class="gioiThieu_footer">
+            <div class="text_footer">Giới thiệu</div>
+            <a class="a_footer" href="#">Về chúng tôi</a>
+            <br>
+            <a class="a_footer" href="#">Chính sách ưu đãi</a>
+            <br>
+            <a class="a_footer" href="#">Blog</a>
+        </div>
+        <div class="lienHe_footer">
+            <div class="text_footer">Liên hệ</div>
+            <a class="a_footer" href="#">0382940892</a>
+            <br>
+            <a class="a_footer" href="#">petfood@gmail.com</a>
+            <br>
+            <a class="a_footer" href="#">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh</a>
+        </div>
+    </footer>
+</body>
+</html>

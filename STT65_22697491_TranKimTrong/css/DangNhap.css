@@ -1,0 +1,568 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+    color: #1d3a2a;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: CircularStd, sans-serif;
+}
+
+/* Font Chữ  */
+@font-face {
+    font-family: 'Brand';
+    src: url('../ttf/Sriracha-Regular.ttf') format('truetype'); /* Đường dẫn tới file font */
+}
+
+.ThongBao { color: red; }
+
+/* Header */
+header {
+    width: 100%;
+    height: 200px;
+}
+
+header > .navbar {
+    width: 100%;
+    height: 70px;
+    position:  fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #cbded177;
+}
+
+/* Brand */
+header > .navbar > .navbar-brand {
+    font-family: 'Brand', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1d3a2a;
+}
+
+/* Menu */
+
+.text_Menu {
+    color: #264634;
+}
+
+.text_Menu:hover {
+    color: #519667;
+}
+
+header .collapse > .navbar-nav li {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+}
+
+header .collapse > .navbar-nav > li > a {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+
+/* Dropdown Sản phẩm*/
+header .custom-sanPham {
+    background-color: #F4F4F4;
+    width: 1350px;
+    height: 600px;
+    margin-left: -430px;
+    margin-top: 9px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+header .dropdown-toggle {
+    color: #1d3a2a;
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    width: 130px;
+    height: 42px;
+}
+
+header .dropdown-toggle:hover {
+    color: #519667;
+}
+
+header .dropdown-toggle:focus body {
+    background-color: #FFFFFF;
+}
+
+header .CT_SanPham {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* DOG */
+
+.CT_SanPham #DogFood {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 30px 90px;
+}
+
+.DOG_DS img {
+    width: 22%;
+    float: left;
+}
+
+.DOG_DS h2 {
+    width: 50%;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    padding: 0px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.DOG_DS h2:hover {
+    background-color: #cbded1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #cbded1;
+}
+
+#DogFood .CT_DOGFOOD {
+    list-style-type: none;
+    width: 100%;
+    margin: 80px 0px;
+}
+
+#DogFood .CT_DOGFOOD li {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 15px 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+#DogFood .CT_DOGFOOD li:hover {
+    background-color: #cbded1;
+}
+
+/* CAT */
+.CT_SanPham #CatFood {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 30px 90px;
+}
+
+.CAT_DS img {
+    width: 22%;
+    float: left;
+}
+
+.CAT_DS h2 {
+    width: 50%;
+    font-size: 45px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    padding: 0px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.CAT_DS h2:hover {
+    background-color: #cbded1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px #cbded1;
+}
+
+#CatFood .CT_CATFOOD {
+    list-style-type: none;
+    width: 100%;
+    margin: 80px 0px;
+}
+
+#CatFood .CT_CATFOOD li {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 15px 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+#CatFood .CT_CATFOOD li:hover {
+    background-color: #cbded1;
+}
+
+/* NOTE */
+
+.CT_SanPham #Note {
+    width: 40%;
+    height: 100%;
+    line-height: 50px;
+    text-align: left;
+    float: left;
+}
+
+.CT_SanPham a {
+    color: #253429;
+}
+
+.CT_SanPham a:hover {
+    text-decoration: none;
+}
+
+.Note_content {
+    text-align: left;
+}
+
+.Note_content > .text_Note {
+    margin-top: -25px;
+    width: 420px;
+    text-align: left;
+}
+
+.Note_content > .text_Note h5 {
+    font-weight: bold;
+}
+
+.Note_content > .img_Note {
+    width: 420px;
+}
+
+.Note_content img {
+    border-radius: 20px;
+    width: 90%;
+}
+
+.box {
+    margin-top: 20px;
+    background-color: #1d3a2a;
+    height: 70px;
+    border-radius: 20px;
+    float: left;    
+    display: flex;
+    gap: 80px;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+    border: 2px solid #e6e4d7;
+}
+
+.box:hover {
+    gap: 120px;
+}
+
+/* TinTuc */
+header .custom-TinTuc {
+    background-color: #F4F4F4;
+    width: 1350px;
+    height: 470px;
+    margin-left: -555px;
+    margin-top: 9px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+#TinTuc li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    height: 600px;
+    text-align: left;
+    padding: 20px;
+}
+
+#TinTuc h2 {
+    padding-bottom: 20px;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+#TinTuc a {
+    text-decoration: none;
+}
+
+#gioiThieu_TT {
+    text-align: justify;
+}
+
+.cus_CT {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: 0.1s ease-in-out;
+}
+
+#hotTT:hover {
+    background-color: rgb(245, 140, 102);
+}
+
+#newTT:hover {
+    background-color: #d6d97e;
+}
+
+#wordTT:hover {
+    background-color: #acddbb;
+}
+
+
+.cus_CT img {
+    width: 14%;
+    border-radius: 50px;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.cus_CT span {
+    font-weight: bolder;
+}
+
+
+#Top_TT img {
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Tài Khoảng */
+header .custom-taikhoang {
+    background-color: #F4F4F4;
+    margin-top: 13px;
+    border: 1px solid #cbded185;
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+}
+
+header .custom-taikhoang .dropdown-item {
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+header .custom-taikhoang .dropdown-item:hover {
+    background-color: #cbded1;
+}
+
+.frmDangNhap {
+    min-width: 500px;
+    width: 50%;
+    height: 700px;
+    margin-top: 45px;
+    padding: 50px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(223, 223, 223, 0.834);
+    backdrop-filter: blur(35px);
+}
+
+.frmDangNhap h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Google {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.Google:hover .GG {
+    background-color: #2949d8;
+    box-shadow: 0px 0px 0px #FFFFFF;
+}
+
+.GG {
+    width: 90%;
+    text-align: center;
+    border: none;
+    background-color: #3f61f5;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px #3f5ff2;
+    transition: 0.1s ease-in-out;
+}
+
+.GG .textGG {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 11px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.GG img {
+    width: 50px;
+    border-radius: 11.5px;
+    border: 15px solid #FFFFFF;
+    float: left;
+}
+
+.or {
+    width: 90%;
+    border-bottom: 1px solid #e6e4d7;
+    padding: 20px;
+}
+
+.text_or {
+    text-align: center;
+    margin-top: -12px;
+    background-color: #FFFFFF;
+    width: 70px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.ThongTin {
+    width: 90%;
+}
+
+.ThongTin label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ThongTin input {
+    width: 100%;
+    padding: 17px 15px;
+    margin-bottom: 20px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.ThongTin input:hover {
+    background-color: #cbded1;
+}
+
+.ThongTin input:focus {
+    outline: none;
+}
+
+.nhomk {
+    width: 50%;
+    float: left;
+}
+
+/* Đổi màu checkbox khi được chọn */
+.nhomk input[type="checkbox"] {
+    accent-color: #cbded1;
+    width: 25px;
+}
+
+.nhomk input {
+    width: 30%;
+    float: left;
+    margin-top: 5px;
+    border: #1d3a2a;
+    transform: scale(2); /* Tăng kích thước lên 1.5 lần */
+    -webkit-transform: scale(1.5); /* Đảm bảo hỗ trợ trên các trình duyệt WebKit */
+    cursor: pointer;
+}
+
+.nhomk label {
+    width: 70%;
+    float: left;
+    cursor: pointer;
+}
+
+.ThongTin .DangNhap {
+    margin-top: 10px;
+    background-color: #72bc13;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #72bc13;
+    font-size: 18px;
+    transition: 0.1s ease-in-out;
+}
+
+.ThongTin .DangNhap:hover {
+    background-color: #72bc13;
+    box-shadow: 0px 0px 0px #FFFFFF;
+}
+
+.QuenMK {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.QuenMK a {
+    transition: 0.1s ease-in-out;
+    width: 25%;
+    min-width: 200px;
+    float: left;
+}
+
+.QuenMK:hover a {
+    letter-spacing: 1px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;  
+}
+
+.forest {
+    width: 100%;
+    position: relative; /* Thêm position để các phần tử con có thể được đặt tuyệt đối */
+    margin-top: -500px;
+    z-index: -1;
+}
+
+.forest img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    
+}
+
+.parallaximage1, .parallaximage2 {
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+.parallaximage3, .parallaximage4 {
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+.parallaximage2 {
+    will-change: transform;
+    transform: translate3d(0px, -1vw, 0px) 
+    
+}
+
+.parallaximage3 {
+    will-change: transform;
+    transform: translate3d(0px, -2vw, 0px);
+    transform-style: preserve-3d;
+    
+}
+
+.parallaximage4 {
+    will-change: transform;
+    transform: translate3d(0px, -3vw, 0px);
+    transform-style: preserve-3d;
+}

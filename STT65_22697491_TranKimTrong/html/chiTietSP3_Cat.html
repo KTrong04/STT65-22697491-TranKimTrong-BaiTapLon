@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFood - Sản phẩm thức ăn mèo ROYAL CANIN HAIR & SKIN Thức ăn hạt cho mèo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/Layout.css">
+    <link rel="stylesheet" href="../css/ChiTietSP.css">
+    <script src="../js/DanhSachSP.js"></script>
+    <script src="../js/GioHang.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+<!-- Brand -->
+            <a class="navbar-brand" href="TrangChu.html">PetFood</a>
+<!-- Nút mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu" aria-controls="Menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!-- Menu -->
+            <div class="collapse navbar-collapse" id="Menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="TrangChu.html"><div class="text_Menu">Trang Chủ</div><span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm
+                        </button>
+                        <div class="dropdown-menu custom-sanPham">
+                            <ul class="CT_SanPham">
+                                <li id="DogFood">
+                                    <a href="DanhSachSP_Cun.html" class="DOG_DS">
+                                        <img src="../img/Dog.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Cún</h2>
+                                    </a><br>
+                                    <ul class="CT_DOGFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Xương gặm & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                    </ul>                              
+                                </li>
+
+                                <li id="CatFood">
+                                    <a href="DanhSachSP_Meo.html" class="CAT_DS">
+                                        <img src="../img/Cat.svg" alt="" width="70px" style="background-color: rgb(149, 218, 195); border-radius: 50px; padding: 5px;">
+                                        <h2>Mèo</h2>
+                                    </a><br>
+                                    <ul class="CT_CATFOOD">
+                                        <li><a href="#">Thức ăn hạt khô</a></li>
+                                        <li><a href="#">Pate & Nước sốt</a></li>
+                                        <li><a href="#">Súp thưởng ăn liền</a></li>
+                                        <li><a href="#">Snack & Bánh thưởng</a></li>
+                                        <li><a href="#">Vitamin & Dinh dưỡng</a></li>
+                                        <li><a href="#">Cỏ mèo & Catnip</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li id="Note"> <br>
+                                    <div class="Note_content">
+                                        <div class="text_Note">
+                                            Thức ăn hàng đầu
+                                            <h5>Monster Cat Grain Free Tiệt Trùng</h5> 
+                                        </div>
+                                        <div class="img_Note">
+                                            <img src="../img/thucAnTop.png" alt="">
+                                            <a href="#"><div class="box" style="width: 385px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tin Tức
+                        </button>
+                        <div class="dropdown-menu custom-TinTuc" >
+                            <ul id="TinTuc">
+                                <li id="gioiThieu_TT">
+                                    <h2>Tin tức thú cưng</h2>
+                                    <p style="width: 90%; float: left;">Cập nhật những thông tin mới nhất về thú cưng, bao gồm xu hướng chăm sóc, chế độ dinh dưỡng, sức khỏe, và mẹo huấn luyện. Bạn sẽ luôn nắm bắt được cách chăm sóc thú cưng tốt nhất và tạo môi trường sống hạnh phúc cho các bạn nhỏ đáng yêu của mình.</p>
+                                </li>
+
+                                <li id="chiTiet_TT">
+                                    <h2>Tin tức</h2>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="hotTT">
+                                            <img src="../img/Lua.png" alt="" style="background-color: rgb(245, 140, 102);">
+                                            <span>Tin tức nóng</span>
+                                        </div> 
+                                    </a>
+
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="newTT">
+                                            <img src="../img/DongHo.png" alt="" style="background-color: #d6d97e;">
+                                            <span>Tin tức mới nhất</span>
+                                        </div> 
+                                    </a>
+                                    <a href="TinTuc.html">
+                                        <div class="cus_CT" id="wordTT">
+                                            <img src="../img/TraiDat.png" alt="" style="background-color: #acddbb;">
+                                            <span>Cập nhật trên toàn thế giới</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li id="Top_TT">
+                                    <h2>Tin thức hàng đầu</h2>
+                                    <img src="../img/tinTucTop.png" alt="">
+                                    <span style="font-size: 18px; font-weight: bolder;">Triệu phú Ấn Độ cho chó cưng thừa kế tài sản</span>
+                                    <a href="TinTuc.html"><div class="box" style="width: 365px; height: 50px;"><div style="font-weight: bold; color: #FFFFFF;">Chi Tiết</div> <div style="font-size: 30px;"><img src="../img/muitenTrang.svg" alt=""></div></div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a href="GioiThieu.html" class="nav-link"><div class="text_Menu">Giới Thiệu</div></a></li>
+                    <li class="nav-item active"><a href="ThuongHieu.html" class="nav-link"><div class="text_Menu">Thương Hiệu</div></a></li>
+                    <li class="nav-item active"><a href="GioHang.html" class="nav-link"><div class="text_Menu">Giỏ Hàng</div></a></li>
+                    <li class="nav-item dropdown">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tài Khoảng
+                        </button>
+                        <div class="dropdown-menu custom-taikhoang" >
+                            <a class="dropdown-item" href="DangNhap.html">Đăng nhập</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="DangKy.html">Đăng ký</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="box_img">
+            <img src="../img/product3Cat.png" class="product-image" alt="" style="width: 85%;">
+        </div>
+        <div class="contentSP">
+            <h1 class="product-name">ROYAL CANIN HAIR & SKIN <br>Thức ăn hạt cho mèo</h1>
+            <p>Chế độ dinh dưỡng cân bằng và hoàn chỉnh cho mèo trưởng thành - Chuyên dùng chăm sóc sức khỏe cho da và lông.</p>
+            <p>Thương hiệu <span style="font-weight: bolder;" class="product-brand">ROYAL CANIN</span></p>
+            <div class="NguoiDung">
+                <div class="giaSP">
+                    <span>Giá bán:</span>
+                    <span class="product-price">579.000đ</span>
+                    <div class="Size">
+                        <div class="text_se">
+                            Chọn Kích Cỡ
+                        </div>
+                        <select name="sizeSP" id="sel_Size">
+                            <option value="50">50g</option>
+                            <option value="400">400g</option>
+                            <option value="2000">2kg</option>
+                            <option value="4000">4kg</option>
+                            <option value="10000">10kg</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quantity-selector">
+                    <button id="decrease"><img src="../img/DauTru.png" alt="-"></button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button id="increase"><img src="../img/DauCong.png" alt="+"></button>
+                    <br>
+                    <form action="">
+                        <button type="submit" id="ThemGH" class="add-to-cart" style="background-color: #ef6c00; padding: 15px 10px;"><img src="../img/gioHang.png" alt="" style="width: 10%;"> &nbsp;Thêm vào giỏ hàng</button>
+                        &nbsp;
+                        <button type="submit" id="Mua" style="background-color: #1d3a2a; padding: 20px;">Đặt mua</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <div class="container">
+        <h2>CHI TIẾT SẢN PHẨM</h2>
+        <div class="ChiTietSP" style="width: 60%;">
+            <p>ROYAL CANIN® Hair & Skin Care có công thức dinh dưỡng độc quyền giúp tăng cường lớp bảo vệ da tránh khỏi tác động của môi trường bên ngoài. Sản phẩm chứa các protein chất lượng cao, các axit amin cần thiết, duy trì sự phát triển khỏe mạnh cho bộ lông óng mượt và sự tái tạo làn da ở mèo.</p>
+            <p>Công thức dinh dưỡng ROYAL CANIN® Hair & Skin Care còn là sự kết hợp thiết yếu các axit béo omega-3 và omega-6, nhằm mang lại hiệu quả cao cho việc chăm sóc sức khỏe làn da và tình trạng lông của mèo. Sản phẩm còn chứa dầu đậu nành, dầu cây lưu ly (giàu axit gamma linolenic) và dầu cá giúp duy trì một bộ lông óng mượt.</p>
+            <p>Ngoài ra, ROYAL CANIN® Hair & Skin Care còn cung cấp một số chất dinh dưỡng quan trọng khác, chẳng hạn như vitamin B, axit amin, kẽm và đồng, giúp tăng cường lớp bảo vệ da tránh khỏi tác động của môi trường bên ngoài, giữ cho sợi lông luôn óng mượt và mật độ lông duy trì ở mức ổn định.</p>
+            <p>Công thức dinh dưỡng độc quyền đã được chứng minh, có thể mang lại sự cải thiện rõ rệt về độ óng mượt của bộ lông mèo sau 21 ngày sử dụng.</p>
+        </div>
+        <img src="../img/productCT3Cat.png" alt="" style="width: 40%;">
+        <hr>
+        <div class="ThanhPhan">
+            <h2>THÀNH PHÂN DINH DƯỠNG</h2>
+            <table>
+                <div class="row">
+                    <div class="col-4"> <h3>Thành Phần</h3></div>
+                    <div class="col-8">
+                        <p>Nguyên liệu: Protein gia cầm sấy khô, chất béo động vật, protein chiết suất thực vật, gạo, chất xơ thực vật, băp, protein động vật thủy phân, lúa mì, nấm men, bột bắp, gluten từ bắp, bột củ cải đường, dầu đậu nành, dầu cá, chất khoáng, dầu cây lưu ly, chiết xuất cúc vạn thọ (nguồn lutein).</p>
+                        <p>Chất phụ gia (trên 1 kg): Chất phụ gia dinh dưỡng: Vitamin A: 26000 IU, Vitamin D3: 700 IU, E1 (Sắt): 37 mg, E2 (Iốt): 3,7 mg, E4 (Đồng): 11 mg, E5 (Mangan): 48 mg, E6 (Kẽm): 102 mg, E8 (Selen): 0,06 mg - Chất bảo quản - Chất chống oxy hóa.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4"><h3>Thành Phần Phân Tích</h3></div>
+                    <div class="col-8"><p>Thành phần dinh dưỡng: Protein: 33% - Hàm lượng chất béo: 22% - Tro thô: 6,9% - Xơ thô: 5% - Trên 1 kg: Axit béo omega 3: 11,5 g - Axit béo omega 6: 52,9 g.</p></div>
+                    </div>
+                </div>
+            </table>
+        </div>
+        <hr>
+        <div class="HuongDan">
+            <h2>HƯỚNG DẪN CHO ĂN</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Cận nặng của mèo(kg)</th>
+                        <th>Ít vận động (g)</th>
+                        <th>cốc</th>
+                        <th>Vận động vừa phải (g)</th>
+                        <th>cốc</th>
+                        <th>Vận động nhiều (g)</th>
+                        <th>cốc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 2</td>
+                        <td>24</td>
+                        <td>2/8</td>
+                        <td>31</td>
+                        <td>2/8</td>
+                        <td>37</td>
+                        <td>3/8</td>
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td>33</td>
+                        <td>2/8</td>
+                        <td>41</td>
+                        <td>3/8</td>
+                        <td>49</td>
+                        <td>3/8</td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td>40</td>
+                        <td>3/8</td>
+                        <td>50</td>
+                        <td>3/8</td>
+                        <td>60</td>
+                        <td>4/8</td>
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td>47</td>
+                        <td>3/8</td>
+                        <td>59</td>
+                        <td>4/8</td>
+                        <td>70</td>
+                        <td>5/8</td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td>53</td>
+                        <td>4/8</td>
+                        <td>67</td>
+                        <td>5/8</td>
+                        <td>80</td>
+                        <td>5/8</td>
+                    </tr>
+                    <tr>
+                        <td> 7</td>
+                        <td>60</td>
+                        <td>4/8</td>
+                        <td>75</td>
+                        <td>5/8</td>
+                        <td>89</td>
+                        <td>6/8</td>
+                    </tr>
+                    <tr>
+                        <td> 8</td>
+                        <td>66</td>
+                        <td>4/8</td>
+                        <td>82</td>
+                        <td>6/8</td>
+                        <td>98</td>
+                        <td>7/8</td>
+                    </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td>71</td>
+                            <td>5/8</td>
+                            <td>89</td>
+                            <td>6/8</td>
+                            <td>107</td>
+                            <td>7/8</td>
+                        </tr><tr>
+                            <td> 10</td>
+                            <td>77</td>
+                            <td>5/8</td>
+                            <td>96</td>
+                            <td>7/8</td>
+                            <td>115</td>
+                            <td>1  </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!-- footer -->
+    <footer>
+        <div class="brand_footer">
+            <a href="home.html">PetFood</a>
+            <br>
+            <a href="#"><img src="../img/logo_inst.svg" alt="instagram"></a>
+            <a href="#"><img src="../img/logo_face.svg" alt="facebook"></a>
+        </div>
+        <div class="produoct_footer">
+            <div class="text_footer">Sản Phẩm</div>
+            <a class="a_footer" href="DanhSachSP_Cun.html">Chó</a>
+            <br>
+            <a class="a_footer" href="DanhSachSP_Meo.html">Mèo</a>
+        </div>
+        <div class="gioiThieu_footer">
+            <div class="text_footer">Giới thiệu</div>
+            <a class="a_footer" href="#">Về chúng tôi</a>
+            <br>
+            <a class="a_footer" href="#">Chính sách ưu đãi</a>
+            <br>
+            <a class="a_footer" href="#">Blog</a>
+        </div>
+        <div class="lienHe_footer">
+            <div class="text_footer">Liên hệ</div>
+            <a class="a_footer" href="#">0382940892</a>
+            <br>
+            <a class="a_footer" href="#">petfood@gmail.com</a>
+            <br>
+            <a class="a_footer" href="#">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh</a>
+        </div>
+    </footer>
+</body>
+</html>

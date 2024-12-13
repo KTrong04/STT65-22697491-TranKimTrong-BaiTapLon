@@ -1,0 +1,309 @@
+article {
+    width: 100%;
+    height: 80px;
+    margin-top: -100px;
+}
+/* Search */
+article form {
+    text-align: center;
+}
+
+article form > input{
+    width: 40%;
+    border: none;
+    padding: 10px;
+}
+
+article form > input:focus {
+    outline: none;
+}
+
+article form > button {
+    border: none;
+}
+
+article form > button > img {
+    background-color: #FFFFFF;
+}
+
+#SlideGT {
+    width: 1500px;
+    height: 480px;
+}
+
+#SlideGT > .slide {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1 {
+    width: 100%;
+    height: 470px;
+    background-image: url(../img/dongco.webp);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#slide1 .content_slide1 {
+    width: 70%;
+    height: 430px
+}
+
+#slide1 .text_slide1 {
+    width: 100%;
+    text-shadow: 0px 0px 2px rgb(157, 157, 157);
+    margin-top: 30px;
+}
+
+#slide1 .text_slide1 h1 {
+    font-weight: bolder;
+    font-size: 45px;
+    padding: 20px 0px;
+    color: #FFFFFF;
+}
+
+#slide1 .text_slide1 p {
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.678);
+    color: #FFFFFF;
+}
+
+.CT_slide {
+    margin-top: 20px;
+    width: 280px;
+    height: 59px;
+    border-radius: 10px;
+    float: left;    
+    gap: 0;
+    display: flex;
+    transition: 0.2s ease-in-out;
+    align-items: center;
+}
+
+.CT_slide:hover {
+    gap: 50px;
+}
+
+#slide2 {
+    width: 100%;
+    height: 470px;
+    background-image: url(../img/backCatslide2.jpg);
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#slide2 .content_slide2 {
+    width: 60%;
+    margin-top: 100px;
+}
+
+#slide2 h1 {
+    float: left;
+    text-align: center;
+    width: 440px;
+    padding: 5px 0px;
+    border-bottom: 4px solid #a21813;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    color: #FFFFFF;
+}
+
+#slide2 p {
+    width: 100%;
+    float: left;
+    font-size: 23px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    color: #FFFFFF;
+}
+
+#slide2 a {
+    float: left;
+}
+
+#slide2 a:hover {
+    text-decoration: none;
+}
+
+#slide3 {
+    width: 100%;
+    height: 470px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-image: url(../img/backDogslide3.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+#slide3 .content_slide3 {
+    width: 70%;
+}
+
+#slide3 .img_slide3 {
+    margin-top: 20px;
+    width: 40%;
+    height: 400px;
+    float: left;
+}
+
+#slide3 .text_slide3 > h1 {
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 100px;
+    font-size: 45px;
+    text-shadow: 0px 0px 15px black;
+    color: #FFFFFF;
+}
+
+#slide3 a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.productTop {
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+}
+
+.productTop .card-group {
+    gap: 30px;
+}
+
+.productTop .card .card-img-top {
+    background-color: #f6f5f2;
+}
+
+
+.productTop .card {
+    border: 1px solid #e6e4d7;
+    border-radius: 8px;
+}
+
+.productTop .card .New {
+    position: absolute;
+    border-top-left-radius: 7px;
+    width: 50px;
+    padding: 4px 0px;
+    float: left;
+    text-align: center;
+    background-color: rgb(224, 149, 10);
+    font-weight: bold;
+    color: #FFFFFF; 
+}
+
+.productTop .card .card-title {
+    font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.productTop .card a {
+    color: #1d3a2a;
+    font-weight: bold;
+}
+
+.productTop .card:hover a{
+    text-decoration: none;
+    color: #1d3a2a;
+}   
+
+.productTop .card .ReadMore {
+    color: #1d3a2a;
+    align-items: center;
+    display: flex;
+    float: left;
+    gap: 10px;
+    padding: 10px 0px;
+
+}
+
+.productTop .card .ReadMore .muiTen {
+    width: 20px;
+}
+
+section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 100px 0px;
+    border-top: 1px solid #e6e4d7;
+    border-bottom: 1px solid #e6e4d7;
+}
+
+section .img_se {
+    margin-top: 30px;
+    width: 13%;
+    display: grid;
+}
+
+section video {
+    width: 35%;
+}
+
+section .text_video_cat {
+    width: 35%;
+    height: 400px;
+}
+
+section .text_video_cat h1 {
+    color: #1d3a2a;
+    font-weight: bolder;
+    margin-top: 150px;
+}
+
+
+#parallaximage {
+    width: 100%;
+    margin-top: 300px;
+}
+
+.forest {
+    width: 100%;
+    height: 50%; /* Đặt chiều cao của container bằng chiều cao màn hình */
+    position: relative; /* Thêm position để các phần tử con có thể được đặt tuyệt đối */
+    float: left;
+    margin-top: 100px;
+}
+
+.forest img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    
+}
+
+.parallaximage1, .parallaximage2 {
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+.parallaximage3, .parallaximage4 {
+    width: 100vw;
+    margin-top: 0;
+    position: absolute;
+}
+
+.parallaximage2 {
+    will-change: transform;
+    transform: translate3d(0px, -1vw, 0px) 
+    
+}
+
+.parallaximage3 {
+    will-change: transform;
+    transform: translate3d(0px, -2vw, 0px);
+    transform-style: preserve-3d;
+    
+}
+
+.parallaximage4 {
+    will-change: transform;
+    transform: translate3d(0px, -3vw, 0px);
+    transform-style: preserve-3d;
+}
+
